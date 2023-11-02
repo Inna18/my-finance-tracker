@@ -6,11 +6,12 @@ export default function Navbar() {
   return (
     <nav>
       <div className={styles.navbar}>
-        <div className={styles.icon}>
-          <img src={moneyIcon} alt="money-icon"/>
+        <div className={styles['navbar-icon']}>
+          <Link to="/">
+            <img src={moneyIcon} alt="money-icon"/>
+          </Link>
         </div>
-        <div className={styles.links}>
-          <Link to="/">Home</Link>
+        <div className={styles['navbar-links']}>
           <Link to="/login">Login</Link>
           <Link to="/signup">Signup</Link>
         </div>

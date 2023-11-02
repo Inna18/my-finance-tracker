@@ -1,0 +1,40 @@
+.login-form {
+    max-width: 360px;
+    margin: 60px auto;
+    padding: 30px 50px 40px;
+    border: solid 1px #e4e3e6;
+    border-radius: 2px;
+}
+.login-title {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+.login-input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.login-input label {
+    display: block;
+    font-size: 14px;
+}
+.login-input input {
+    width: 100%;
+    border: #bbbbbd solid 1px;
+    border-radius: 4px;
+    padding: 4px;
+}
+.login-form .btn-cnt {
+    margin-top: 30px;
+
+}
+.login-form .btn-cnt .login-btn {
+    border: #93bd9c solid 2px;
+    border-radius: 4px;
+    padding: 6px;
+    background: #fff;
+    color: #1f9751;
+    font-size: 16px;
+    cursor: pointer;
+}
