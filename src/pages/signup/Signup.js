@@ -1,7 +1,6 @@
 import styles from "./Signup.module.css";
 import {useState} from "react";
 import {useSignup} from "../../hooks/useSignup";
-import {useAuthContext} from "../../hooks/useAuthContext";
 
 export default function Signup() {
   const [email, setEmail] = useState("");

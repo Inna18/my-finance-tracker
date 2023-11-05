@@ -18,3 +18,12 @@
     text-decoration: none;
     color: #fff
 }
+.logout-btn {
+    border: #fff solid 2px;
+    border-radius: 4px;
+    padding: 6px;
+    background: #93bd9c;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
