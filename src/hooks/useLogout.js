@@ -23,15 +23,13 @@ export const useLogout = () => {
       if (!isCancelled) {
         setIsPending(false);
         setError(e.message);
-        console.log("Error during logout...");
       }
-      console.log("Error during logout...");
     }
   }
 
   useEffect(() => {
-    setIsCancelled(true);
-  })
+    return () => setIsCancelled(true);
+  }, [])
 
   return { logout, error, isPending };
 }

@@ -22,16 +22,16 @@ export const useLogin = () => {
       }
     } catch (e) {
       if (!isCancelled) {
+        console.log(e.message)
         setIsPending(false);
-        setError(null);
-        console.log("Error during Login...")
+        setError(e.message);
       }
     }
   }
 
   useEffect(() => {
-    setIsCancelled(true);
-  })
+    return () => setIsCancelled(true);
+  }, []);
 
   return { login, error, isPending }
 }
