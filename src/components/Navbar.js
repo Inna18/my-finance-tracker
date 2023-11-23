@@ -11,10 +11,13 @@ export default function Navbar() {
   return (
     <nav>
       <div className={styles.navbar}>
-        <div className={styles['navbar-icon']}>
-          <Link to="/">
-            <img src={moneyIcon} alt="money-icon"/>
-          </Link>
+        <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
+          <div className={styles['navbar-icon']} style={{marginRight:"4px"}}>
+            <Link to="/">
+              <img src={moneyIcon} alt="money-icon"/>
+            </Link>
+          </div>
+          <h3 style={{color:"#fff"}}>MoneyApp</h3>
         </div>
         <div className={styles['navbar-links']}>
           {
